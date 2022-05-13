@@ -6,12 +6,12 @@ import SongList from './SongList';
 function App() {
   const [songs, setSongs] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 40;
+  const perPage = 10;
 
   useEffect(() => {
     async function fetchSongs() {
       const from = page * perPage - perPage;
-      const to = page * perPage;
+      const to = page * perPage - 1;
       const songsData = await getSongs(from, to);
 
       setSongs(songsData);
