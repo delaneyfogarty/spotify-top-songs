@@ -9,6 +9,7 @@ export default function App() {
     <Router>
       <div className="App">
         <header>
+          <h1>Top 50 Spotify Hits in 2021</h1>
           <>
             <NavLink exact className="active-link" to="/">
               Home

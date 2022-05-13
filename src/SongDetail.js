@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getSingleSong } from './services/fetch-utils';
+import './App.css';
 
 export default function SongDetail() {
   const [song, setSong] = useState({});

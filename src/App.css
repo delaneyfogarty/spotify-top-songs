@@ -1,5 +1,9 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.App {
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +39,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.song-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 10px;
+  background-color: limegreen;
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.songs div {
+  margin: 25px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: limegreen;
+  opacity: 50%;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background: linear-gradient(120deg, #1db954, #191414);
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+header h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
